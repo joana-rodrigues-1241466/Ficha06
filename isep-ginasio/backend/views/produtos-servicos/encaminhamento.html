@@ -42,7 +42,8 @@
         <h4>Menu</h4>
         <nav>
             <a href="../clientes/lista.html"><i class="fas fa-users"></i> &ensp; Clientes</a>
-            <a href="../agendamento/agendamento.html"><i class="fas fa-calendar-alt"></i> &ensp; Agendamento de treinos</a>
+            <a href="../agendamento/agendamento.html"><i class="fas fa-calendar-alt"></i> &ensp; Agendamento de
+                treinos</a>
             <a href="../planos/planos.html"><i class="fas fa-dumbbell"></i> &ensp; Planos de Treino</a>
             <a href="../equipamentos/equipamentos.html"><i class="fas fa-cogs"></i> &ensp; Equipamentos</a>
             <a href="produtos-servicos.html"><i class="fas fa-box-open"></i> &ensp; Produtos e Serviços</a>
@@ -52,10 +53,32 @@
     <!-- Conteúdo Principal -->
     <main class="content">
         <section>
-            <h2>Produtos e Serviços</h2>
-            <p>Consulte e faça a gestão dos produtos e serviços disponíveis no ginásio.</p>
+            <h2>Avaliação de Condições de Saúde</h2>
+            <p>Utilize este formulário para selecionar as condições de saúde relevantes do
+                cliente. As informações escolhidas irão gerar uma recomendação personalizada para o
+                plano de treino.</p>
         </section>
     </main>
+
+    <div class="form-wrapper">
+        <h2><strong><i class="fa-solid fa-dumbbell"></i> Avaliação de Condições de Saúde</strong></h2>
+        <hr>
+        <form oninput="avaliarCondicoes()">
+            <div>
+                <input type="checkbox" id="temProblemasCostas" name="condicao">
+                <label>Problemas de costas</label><br>
+                <label><input type="checkbox" id="estaGravida" name="condicao"> Grávida</label><br>
+                <label><input type="checkbox" id="temDiabetes" name="condicao"> Diabético/a</label>
+            </div>
+            <div class="form-group">
+                <label>Recomendação:</label>
+                <div id="mensagem" class="alert text-center"></div>
+            </div>
+        </form>
+    </div>
+
+    <script src="../../includes/js/funcoes.js"></script>
+    
 </body>
 
 </html>

@@ -508,3 +508,23 @@ td span {
     /* Define a cor preta para o texto dos links */
     /* Remove sublinhado */
 }
+
+/* Classe para IMC abaixo do peso */
+.abaixoPeso {
+    color: green;
+}
+
+/* Classe para IMC peso normal */
+.pesoNormal {
+    color: green;
+}
+
+/* Classe para IMC sobrepeso */
+.sobrepeso {
+    color: red;
+}
+
+/* Classe para IMC obeso */
+.obeso {
+    color: red;
+}
